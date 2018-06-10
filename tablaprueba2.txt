@@ -1,0 +1,36 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
+
+--
+-- Base de datos: `proyecto`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `tablaprueba2`
+--
+
+DROP TABLE IF EXISTS `proyecto`.`tablaprueba2`;
+CREATE TABLE IF NOT EXISTS `proyecto`.`tablaprueba2` (
+`ID` int(10) NOT NULL AUTO_INCREMENT,
+`Nombre` varchar(30) COLLATE utf8_spanish2_ci NOT NULL,
+`Apellido1` varchar(30) COLLATE utf8_spanish2_ci NOT NULL,
+`Apellido2` varchar(30) COLLATE utf8_spanish2_ci NOT NULL,
+`Email` varchar(40) COLLATE utf8_spanish2_ci,
+`Direccion` varchar(30) COLLATE utf8_spanish2_ci,
+PRIMARY KEY (`ID`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish2_ci;
+
+--
+-- Volcado de datos para la tabla `tablaprueba3`
+--
+
+INSERT INTO `proyecto`.`tablaprueba2` (`ID`, `Nombre`, `Apellido1`, `Apellido2`, `Email`, `Direccion`) VALUES
+("4", "Eugenio", "Perojil", "Pérez", "eumakue92@gmail.com", "Los Girasoles, 10"),
+("5", "Luisa", "Amieva", "Rodríguez", "luisamieva@gmail.com", "Alfarería, 111 3C"),
+("6", "Eugenio", "Pérez", "Pérez", "eumakue92@gmail.com", "Los Girasoles, 10"),
+("7", "Eugenio", "Pérez", "Pérez", "eumakue92@gmail.com", "Los Girasoles, 10");
+COMMIT;
